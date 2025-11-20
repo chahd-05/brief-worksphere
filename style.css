@@ -168,27 +168,79 @@ p {
     background-color: #EF4444;
 }
 
-input{
-    display: flex;
-    margin: 10px;
-    width: 300px;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    height: 30px;
-    border-radius: 30px;
-    padding-left: 10px;
+
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 15, 15, 0.5);
+    display: block;
+    z-index: 5;
 }
 
-select{
-    display: flex;
-    margin: 10px;
-    width: 300px;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    height: 30px;
-    border-radius: 30px;
-    padding-left: 10px;
+#add-modal {
+    position: fixed;
+    top: 200px;
+    transform: translate(0%);
+    background: #e0dada;
+    padding: 20px;
+    border-radius: 15px;
+    width: 500px;
+    z-index: 10;
+    display: block;
+    box-shadow: 0 0 10px #EF4444;
 }
-.input {
-    display: nonejs;
+
+#add-modal input,
+#add-modal select {
+    width: 100%;
+    border-radius: 8px;
+    border: solid 1px #2B9CFF;
+    padding: 7px;
+    margin: 10px 2px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    top: 20px;
+}
+
+#add-worker {
+    background-color: #2B9CFF;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+#cancel {
+    background-color: #EF4444;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.worker-card {
+
+    background-color: #a9d5fc;
+    border: solid 1px #2B9CFF;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.remove {
+   position: absolute;
+   top: 40%;
+   right: 0;
+   margin:  0 10px;
+   padding: 5px 10PX;
+   background: #f8eaea;
+}
+
+.remove:hover {
+    background-color: #de2f22;  
+    transition: 1s;
 }
