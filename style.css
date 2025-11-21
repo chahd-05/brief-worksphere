@@ -1,5 +1,5 @@
 body {
-    background-color: #EAFBF9;
+    background-color: #f6f8fb;
 }
 
 .h2 {
@@ -8,41 +8,25 @@ body {
     top: 65px;
     left: 400px;
 }
-h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
-h4 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-}
-
-h3 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-}
-
-p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 .staff {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
     margin: 30px;
     padding: 30px;
-    width: 200px;
+    
 }
 
 .WorkSphere {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
     margin: 30px;
     padding: 30px;
-    height: auto;
 }
 
 .both {
@@ -51,17 +35,18 @@ p {
 }
 
 .border {
-    background-color: #f6ecf3;
+    background-image: linear-gradient(to right,rgb(255, 249, 249), rgb(255, 240, 240));
     padding: 2px 10px;
     height: 200px;
     width: 320px;
     border-radius: 20px;
     position: relative;
-    box-shadow: 0px 0px  5px #09283F;
+    box-shadow: 0px 0px  5px hsl(0, 100%, 50%);
     top: 80px;
 }
+
 .border:hover {
-    background-color: #f4dced;  
+    background-image: linear-gradient(to right, rgb(254, 230, 230),rgb(255, 249, 249));
     padding: 3px 1px; 
    
 
@@ -71,25 +56,16 @@ p {
     position: absolute;
     top: 20px;
     right: 15px;
-    background-color: #0d4b7a;
+    background-color: ;
     border-radius: 10px;
-    height: 45px;
-    width: -20px;
+    border: none;
 }
-
+.btn-1:hover,
 .btn:hover {
-    background-color: #a6cce9;  
-    transition: 1s;
+    background-color: #85c1f6;  
+    transition: 0.6s ease-in;
 }
 
-.para {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: 20%;
-    color: gray;
-    opacity: 40%;
-}
 
 .roles {
     padding: 0 10px;
@@ -97,36 +73,18 @@ p {
 }
 
 .btn-1 {
-    background-color: #2B9CFF;
+    background-color: #0BD931;
     width: 130px;
     height: 40px;
-    border-radius: 15px;
-    font-weight: 600;
+    border-radius: 50px;
+    color: white;
+    border: none;
 }
 #btn-div {
     display: flex;
     justify-content: center;
 }
 
-#search-bar {
-    width: 200px;
-    height: 30px;
-    padding: 10px;
-    margin: 20px 0;
-    border: solid 1px #2B9CFF;
-    border-radius: 50px;
-}
-#search-bar:hover {
-    background-color: #eef5fb;
-    border: solid 1px #0d4b7a;
-    padding: 5px 20px; 
-    transition: 1s;
-}
-
-#filter {
-    display: flex;
-    gap: 10px;
-}
 
 #selections {
     width: 200px;
@@ -176,7 +134,7 @@ p {
     width: 100%;
     height: 100%;
     background: rgba(15, 15, 15, 0.5);
-    display: block;
+    display: none;
     z-index: 5;
 }
 
@@ -189,7 +147,7 @@ p {
     border-radius: 15px;
     width: 500px;
     z-index: 10;
-    display: block;
+    display: none ;
     box-shadow: 0 0 10px #EF4444;
 }
 
@@ -243,4 +201,40 @@ p {
 .remove:hover {
     background-color: #de2f22;  
     transition: 1s;
+}
+
+.formal {
+    position: fixed;
+    top: 200px;
+    transform: translate(0%);
+    background: #f8eaea;
+    padding: 20px;
+    border-radius: 15px;
+    width: 500px;
+    z-index: 10;
+    display: none ;
+    box-shadow: 0 0 10px #EF4444;
+}
+
+.assigned-employee {
+    background-color: #d4f0e0;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 8px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.assigned-employee button {
+    background-color: #EF4444;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 2px 6px;
+}
+
+.para {
+    color: gray;
+    opacity: 40%;
 }
