@@ -64,14 +64,15 @@ addBtn.addEventListener("click", () => {
     employeeId.addEventListener("click", () => {
         formal.innerHTML = `
             <div class="worker-card">
-                <h4>${name}</h4>
-                <p>${role}</p>
-                <p>${email}</p>
+            <img src = "${pic}">
+            <h4>${name}</h4>
+            <p>${role}</p>
+            <p>${email}</p>
             </div>
         `;
         const removebtn = document.createElement("button");
         removebtn.textContent = "❌";
-        removebtn.style.marginLeft = "10px";
+        removebtn.style.margin = "10px ";
         removebtn.addEventListener("click", () => {
             formal.classList.add("assigned-employee");
             formal.style.display = "none";
