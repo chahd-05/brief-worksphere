@@ -28,10 +28,15 @@ addBtn.addEventListener("click", () => {
     const email = emailinput.value.trim();
     const phone = phoneinput.value.trim();
 
-    if (!name || !email || !phone) {
-        alert("please fill all the fields !!");
-        return;
-    }
+    const nameRegex = /^[a-zA-Z\s]{2,30}$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^[0-9]{8,14}$/;
+
+if (!nameRegex.test(name) || !emailRegex.test(email) || !phoneRegex.test(phone)) {
+    alert("Please enter valid name, email, and phone number!");
+    return;
+}
+
 
     const employeeId = document.createElement("div");
     employeeId.classList.add("employeeId");
